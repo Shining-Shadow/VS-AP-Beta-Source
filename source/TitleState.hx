@@ -318,7 +318,7 @@ class TitleState extends MusicBeatState
 						trace('outdated lmao! ' + returnedData[0] + ' != ' + MainMenuState.kadeEngineVer);
 						OutdatedSubState.needVer = returnedData[0];
 						OutdatedSubState.currChanges = returnedData[1];
-						FlxG.switchState(new OutdatedSubState());
+						FlxG.switchState(new MainMenuState());
 					}
 					else
 					{
@@ -393,7 +393,7 @@ class TitleState extends MusicBeatState
 			case 0:
 				deleteCoolText();
 			case 1:
-				createCoolText(['ninjamuffin99', 'phantomArcade', 'kawaisprite', 'evilsk8er']);
+				createCoolText(['Eternal_', 'Empty Batteries', 'SoupaGalaxy', 'Shining Shadow']);
 			// credTextShit.visible = true;
 			case 3:
 				addMoreText('present');
@@ -408,7 +408,7 @@ class TitleState extends MusicBeatState
 				if (Main.watermarks)
 					createCoolText(['Kade Engine', 'by']);
 				else
-					createCoolText(['In Partnership', 'with']);
+					createCoolText(['Shoutouts', 'to']);
 			case 7:
 				if (Main.watermarks)
 					addMoreText('KadeDeveloper');
@@ -437,13 +437,13 @@ class TitleState extends MusicBeatState
 			// credTextShit.text = "Friday";
 			// credTextShit.screenCenter();
 			case 13:
-				addMoreText('Friday');
+				addMoreText("Friday Night Funkin'");
 			// credTextShit.visible = true;
 			case 14:
-				addMoreText('Night');
+				addMoreText('VS');
 			// credTextShit.text += '\nNight';
 			case 15:
-				addMoreText('Funkin'); // credTextShit.text += '\nFunkin';
+				addMoreText('AP'); // credTextShit.text += '\nFunkin';
 
 			case 16:
 				skipIntro();
